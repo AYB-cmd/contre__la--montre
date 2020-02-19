@@ -4,23 +4,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  //mixin grid ajustement
-  @mixin grid {
+}
+
+//mixin grid ajustement
+@mixin grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "feature-text feature-img-cont"; //nom des classes
-  }
-  
-  //mixin pour le responsive  @content = ce que vous allez ecrire en CSS
-  @mixin responsive($arg) {
-  @media screen and (max-width: $arg){
-      @content;
+}
+
+//mixin pour le responsive  @content = ce que vous allez ecrire en CSS
+@mixin responsive($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
     }
-  }
-  @mixin boxshadow {
-    box-shadow:$main-box-shadoww;
+}
+
+@mixin boxshadow {
+    box-shadow: $main-box-shadoww;
     border-radius: 10px;
-    margin:2em 
-  }
+    margin: 2em
+}
+
+@mixin Btn {
+    background-color: $color-accent;
+    box-shadow: $main-box-shadoww;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    
+}

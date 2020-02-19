@@ -1,15 +1,22 @@
 {
-  "name": "scss",
-  "version": "1.0.0",
-  "description": "## Welcome! 👋",
-  "main": "index.js",
-  "scripts": {
-    "footer": "node-sass sass/main.scss css/style.css -w"
-    
-  },
-  "author": "ayoub",
-  "license": "ISC",
-  "dependencies": {
-    "node-sass": "^4.13.1"
-  }
+    "name": "scss",
+    "version": "1.0.0",
+    "description": "## Welcome! 👋",
+    "main": "index.js",
+    "scripts": {
+        "watch:sass": "node-sass CSS/main.scss CSS/style.comp.css  -w",
+        "server:": "live-server --port=8181 ",
+        "start": "concurrently  \"npm run server:\" \"npm run watch:sass\"",
+        "compiler": "node-sass SASS/main.scss CSS/style.comp.css",
+        "compress": "node-sass CSS/style.comp.css CSS/style.css --output-style compressed",
+        "building": "npm-run-all compress compiler"
+    },
+    "author": "Youweb",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^5.1.0",
+        "live-server": "^1.2.1",
+        "node-sass": "^4.13.1",
+        "npm-run-all": "^4.1.5"
+    }
 }

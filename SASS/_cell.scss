@@ -34,17 +34,21 @@ main{
     flex-flow: row-reverse;
     }
     .banner{
-      z-index: 1;
       @include flex;
       @include boxshadow();
       text-align: center;
       width: 65%;
       height: 300px;
+      .banner__btn{
+        @include Btn;
+        font-size: 18px;
+        padding: 20px 50px;
+      }
     }
   }
   
 }
-@include responsive(1020px){
+@include responsive(1024px){
 main{
   img{
     margin:80px auto 80px auto;
@@ -69,10 +73,32 @@ main{
         width: 80%;
         margin: auto;
       }
+      
     }
   }
   
 }
+}
+@include responsive(900px){
+  main .container .banner{
+    @include flex;
+    @include boxshadow();
+    text-align: center;
+    width: 65%;
+    height: 300px;
+    main .container .banner  .banner__title{
+        width: 70%;
+      }
+    
+    main .container .banner .banner__btn{
+      main .container .banner .banner__btn a{
+      @include Btn;
+      font-size: 10px;
+      padding: 20px 50px;
+      }
+    }
+  }
+
 }
 
 
