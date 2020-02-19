@@ -1,9 +1,78 @@
+.hero {
+    background-color: #daf3ff;
+    padding: 80px 10px;
+    &__btn {
+        cursor: pointer;
+        padding: 10%;
+        &--light {
+            background-color: #aaa;
+            color: #00252e;
+            background: #fff;
+            box-shadow: $main-box-shadoww;
+            font-size: 14px;
+            position: relative;
+            top: -50px;
+            left: 6px;
+            font-weight: bold;
+            color: #000;
+            padding: 15.5px 25px
+        }
+    }
+    &__heading {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+        padding: 15px 0px;
+        grid-column: span 2;
+        text-align: center;
+    }
+    &__subheading {
+        text-align: center;
+    }
+    &__btn {
+        &--accent {
+            background-color: $color-accent;
+            color: rgb(131, 39, 39);
+            box-shadow: 0px 0px 30px 0px #aaa;
+        }
+    }
+    &__btn {
+        &--accent {
+            background-color: $color-accent;
+            color: rgb(131, 39, 39);
+            box-shadow: $main-box-shadoww;
+            position: relative;
+            top: 45px;
+            left: 50px;
+            color: white;
+            font-size: 14px;
+            padding: 15.5px 52px;
+            font-weight: bold;
+        }
+    }
+    &__right {
+        max-width: 100%;
+        position: relative;
+        top: 100px;
+    }
+    a {
+        text-decoration: none;
+        border-radius: 100px;
+    }
+}
+
+.container {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:1020px) {
     .hero {
         background-color: #daf3ff;
         padding: 80px 10px;
         &__btn {
-            cursor: pointer;
             padding: 10%;
+            cursor: pointer;
             &--light {
                 background-color: #aaa;
                 color: #00252e;
@@ -11,116 +80,61 @@
                 box-shadow: $main-box-shadoww;
                 font-size: 14px;
                 position: relative;
-                top: -50px;
+                top: -25px;
                 left: 6px;
                 font-weight: bold;
                 color: #000;
-                padding: 15.5px 25px
+                padding: 15.5px 58px
             }
         }
         &__heading {
             font-family: Arial, Helvetica, sans-serif;
             font-size: xx-large;
-            padding: 15px 0px;
-            grid-column: span 2;
+            margin: auto 63%;
+            margin-left: 4px;
+            margin-top: 110px;
             text-align: left;
         }
         &__subheading {
-            text-align: left !important;
+            margin: 3% 58% -5% 0%;
+            text-align: left;
         }
         &__btn {
             &--accent {
-                @include Btn;
-                top: 50px;
-                left: 21%;      
+                background-color: $color-accent;
+                color: rgb(131, 39, 39);
+                box-shadow: 0px 0px 30px 0px #aaa;
+            }
+        }
+        &__btn {
+            &--accent {
+                background-color: $color-accent;
+                color: rgb(131, 39, 39);
+                box-shadow: $main-box-shadoww;
+                position: relative;
+                top: 110px;
+                left: 1px;
+                color: white;
+                font-size: 14px;
+                padding: 15.5px 58px;
+                font-weight: bold;
             }
         }
         &__right {
-            max-width: 100%;
+            display: block;
+            max-width: 80%;
+            margin-left: 50%;
             position: relative;
-            top: 100px;
+            top: -174px;
         }
         a {
             text-decoration: none;
             border-radius: 100px;
         }
     }
-    
     .container {
         max-width: 1270px;
         width: 100%;
         margin: 0 auto;
     }
-    
-    @media only screen and (min-width:1020px) {
-        .hero {
-            background-color: #daf3ff;
-            padding: 80px 10px;
-            &__btn {
-                padding: 10%;
-                cursor: pointer;
-                &--light {
-                    background-color: #aaa;
-                    color: #00252e;
-                    background: #fff;
-                    box-shadow: $main-box-shadoww;
-                    font-size: 14px;
-                    position: relative;
-                    top: -25px;
-                    left: 6px;
-                    font-weight: bold;
-                    color: #000;
-                    padding: 15.5px 58px
-                }
-            }
-            &__heading {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: xx-large;
-                margin: auto 63%;
-                margin-left: 4px;
-                margin-top: 110px;
-                text-align: center
-            }
-            &__subheading {
-                margin: 3% 58% -5% 0%;
-                text-align: center;
-            }
-            &__btn {
-                &--accent {
-                    background-color: $color-accent;
-                    color: rgb(131, 39, 39);
-                    box-shadow: 0px 0px 30px 0px #aaa;
-                }
-            }
-            &__btn {
-                &--accent {
-                    background-color: $color-accent;
-                    color: rgb(131, 39, 39);
-                    box-shadow: $main-box-shadoww;
-                    position: relative;
-                    top: 110px;
-                    left: 0px !important;
-                    color: white;
-                    font-size: 14px;
-                    padding: 15.5px 58px;
-                    font-weight: bold;
-                }
-            }
-            &__right {
-                display: block;
-                max-width: 80%;
-                margin-left: 50%;
-                position: relative;
-                top: -174px;
-            }
-            a {
-                text-decoration: none;
-                border-radius: 100px;
-            }
-        }
-        .container {
-            max-width: 1270px;
-            width: 100%;
-            margin: 0 auto;
-        }
-    }
+}

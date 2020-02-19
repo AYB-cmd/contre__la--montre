@@ -3,7 +3,7 @@ footer {
     background: $text-color-primary;
     @include flex;
     .container {
-      margin-top: 100%;
+      margin-top: 20%;
       .footer__main {
         @include flex;
         flex-direction: row;

@@ -16,8 +16,9 @@ main{
     bottom: -147px;
     @include flex;
     flex-direction: column;
-    &:nth-child(4){
-      z-index: -5;
+    
+    &:first-child{
+      margin-top: 5em;
     }
     .main__features{
       @include flex;
@@ -34,6 +35,9 @@ main{
     flex-flow: row-reverse;
     }
     .banner{
+      position: relative;
+      background: white;
+      top: 146px;
       @include flex;
       @include boxshadow();
       text-align: center;
@@ -100,7 +104,3 @@ main{
   }
 
 }
-
-
-
-
