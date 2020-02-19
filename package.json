@@ -1,0 +1,15 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "## Welcome! 👋",
+  "main": "index.js",
+  "scripts": {
+    "footer": "node-sass sass/main.scss css/style.css -w"
+    
+  },
+  "author": "ayoub",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
