@@ -1,4 +1,4 @@
 # contre__la--montre
 **deploy link**
 
-challenge-home.netlify.app
+https://challenge-home.netlify.app
